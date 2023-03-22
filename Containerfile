@@ -7,6 +7,9 @@ RUN rm /etc/yum.repos.d/fedora-cisco-openh264.repo && \
     rm /etc/yum.repos.d/rpmfusion-nonfree-nvidia-driver.repo && \
     rm /etc/yum.repos.d/rpmfusion-nonfree-steam.repo
 
+# Add Twingate repo
+COPY repos/packages.twingate.com_rpm_.repo /etc/yum.repos.d/
+
 # Copy some configs from ublue
 
 COPY --from=ghcr.io/ublue-os/config:latest /files/ublue-os-udev-rules /
