@@ -18,4 +18,4 @@ Warning: This is an experimental feature and should not be used in production (y
 
 To rebase an existing Silverblue/Kinoite machine to the latest release: 
 
-    sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/bhoman/silverblue:latest
+    sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/benhoman/silverblue:latest
